@@ -5,7 +5,7 @@ from torch.nn import functional as F
 
 class ConvNet(nn.Module):
    super().__init__()
-        self.conv1 = nn.Conv2d(in_channels=3, out_channels=64, kernel_size=(3, 3))
+        self.conv1 = nn.Conv2d(in_channels=3, out_channels=64, kernel_size=(5, 5))
         self.pool1 = nn.MaxPool2d(kernel_size=(3, 3))
         self.norm1 = nn.BatchNorm2d(64)
         self.conv2 = nn.Conv2d(in_channels=64, out_channels=512, kernel_size=(3, 3))
